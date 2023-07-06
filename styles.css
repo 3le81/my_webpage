@@ -56,15 +56,23 @@ li a:active {
 
 }
 
-https: //github.com/3le81
-
 .project_title {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
     line-height: 0.5;
     font-family: 'Montserrat', sans-serif;
+}
 
 
+
+a:-webkit-any-link {
+    color: rgb(82, 73, 205);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+    color: green;
 }
 
 .flex-container {
@@ -106,14 +114,27 @@ p {
     max-width: 80%;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid azure;
-    color: rgb(114, 0, 114);
+    color: rgb(82, 73, 205);
 }
 
 /* MEDIA */
-@media (max-width: 28.75em) {
+@media (max-width: 900px) {
     .projects-section-header {
         font-size: 0.1rem;
     }
+
+    .logo_name {
+        font-size: 1.5rem;
+        margin-left: 5px;
+    }
+
+    li a {
+        display: inline-block;
+        font-size: 1.2rem;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
 }
 
 /* MEDIA END */
@@ -126,7 +147,6 @@ p {
     width: 100%;
     max-width: 1280px;
     margin-top: -60px;
-    background-color: lightGrey;
 }
 
 /* MEDIA */
@@ -144,13 +164,13 @@ p {
 
 
 .project {
-    background-color: rgba(252, 205, 233, 0.3);
+    background-color: rgba(248, 242, 157, 0.3);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
 
 .project:hover {
-    background-color: rgba(253, 197, 230, 0.5);
+    background-color: rgba(252, 252, 77, 0.5);
 }
 
 .project-image {
