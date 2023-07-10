@@ -278,7 +278,7 @@ main>p {
     background-color: rgba(68, 204, 253, 0.5);
     color: rgb(82, 73, 205);
     border: none;
-    height: 20px;
+    height: 1.5rem;
 }
 
 .toTop:hover {
