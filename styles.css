@@ -131,9 +131,15 @@ p {
 
     li a {
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 10px;
         margin-top: 15px;
+
+    }
+
+    main>p {
+        line-height: 1.6rem;
+        width: auto;
     }
 
 }
@@ -146,22 +152,9 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     width: 100%;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin-top: -60px;
 }
-
-/* MEDIA */
-@media (max-width: 30.625em) {
-    .projects-section {
-        padding: 4rem 1rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* MEDIA END */
 
 
 .project {
@@ -235,9 +228,33 @@ p {
 
 /* ABOUT SESSION PAGE */
 
+.row {
+    display: flex;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
 .elena_photo {
     width: 300px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .ele_photo {
@@ -249,4 +266,21 @@ p {
     width: 400px;
     height: 280px;
     margin-left: 60px;
+    margin-right: 40px;
+}
+
+main>p {
+    line-height: 1.6rem;
+}
+
+.toTop {
+    float: right;
+    background-color: rgba(68, 204, 253, 0.5);
+    color: rgb(82, 73, 205);
+    border: none;
+    height: 20px;
+}
+
+.toTop:hover {
+    background-color: rgba(68, 204, 253, 0.2);
 }
